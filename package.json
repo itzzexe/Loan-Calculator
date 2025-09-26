@@ -1,14 +1,44 @@
 {
-  "name": "loan-calculator",
+  "name": "modern-loan-calculator",
   "version": "1.0.0",
   "type": "module",
-  "description": "Loan Calculator - Advanced Financial Calculator",
+  "description": "A comprehensive, multi-currency financial calculator built with React and Vite. Provides powerful tools for loan calculations, APR analysis, amortization schedules, and time value of money computations.",
   "main": "index.js",
+  "homepage": "https://github.com/itzzexe/Loan-Calculator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itzzexe/Loan-Calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itzzexe/Loan-Calculator/issues"
+  },
+  "keywords": [
+    "loan-calculator",
+    "financial-calculator",
+    "apr-calculator",
+    "amortization-schedule",
+    "time-value-money",
+    "multi-currency",
+    "react",
+    "vite",
+    "tailwindcss",
+    "iraqi-dinar",
+    "financial-tools"
+  ],
+  "author": {
+    "name": "Modern Loan Calculator Team",
+    "url": "https://github.com/itzzexe"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix",
+    "clean": "rm -rf dist node_modules",
+    "reinstall": "npm run clean && npm install",
+    "serve": "npm run build && npm run preview"
   },
   "dependencies": {
     "react": "^18.2.0",
